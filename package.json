@@ -16,7 +16,7 @@
     "babel": "npx babel src -d lib",
     "babel:watch": "npx babel -- --watch",
     "clean": "npx rimraf lib",
-    "test": "echo \"Error: no test specified\" && exit 0",
+    "test": "jest",
     "contributors:add": "npx all-contributors add",
     "contributors:generate": "npx all-contributors generate",
     "contributors:check": "npx all-contributors check"
@@ -49,10 +49,12 @@
     "md5": "^2.2.1"
   },
   "devDependencies": {
+    "@types/jest": "^29.5.11",
     "all-contributors-cli": "^4.11.0",
     "eslint": "^4.19.0",
     "eslint-config-prettier": "^2.9.0",
     "husky": "^0.14.3",
+    "jest": "^29.7.0",
     "prettier": "^1.11.1",
     "source-map-support": "^0.5.4",
     "stylelint": "^9.1.3",
